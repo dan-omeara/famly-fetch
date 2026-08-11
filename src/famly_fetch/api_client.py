@@ -3,6 +3,7 @@ import json
 import urllib.parse
 import urllib.request
 import uuid
+import time
 
 from importlib_resources import files
 
@@ -149,6 +150,9 @@ class ApiClient:
             url += "?" + query_string
 
         req = urllib.request.Request(url=url, headers=headers, method=method, data=b)
+        print("Sending a request to Famly API...")
+        time.sleep(2)  # Add a delay of 2 seconds before making the request
+
         try:
             with urllib.request.urlopen(req) as f:
                 body = f.read().decode("utf-8")
