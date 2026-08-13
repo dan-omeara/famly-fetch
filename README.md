@@ -11,6 +11,34 @@ Fetch your (kid's) images from famly.co
 code base. If you create PRs with improvements or bugfixes, please make sure
 to test them before submitting them.**
 
+## Local Development
+
+To run the project locally from source:
+
+```bash
+git clone https://github.com/dan-omeara/famly-fetch.git
+cd famly-fetch
+python -m venv .venv
+```
+
+Activate the virtual environment:
+
+- **Windows:** `.venv\Scripts\activate`
+- **Mac/Linux:** `source .venv/bin/activate`
+
+Then install the package in editable mode:
+
+```bash
+pip install -e .
+famly-fetch
+```
+
+To deactivate the virtual environment when done:
+
+```bash
+deactivate
+```
+
 ## Get Started
 
 ```
