@@ -7,9 +7,7 @@
 
 Fetch your (kid's) images from famly.co
 
-**NOTICE: I no longer have access to Famly, so I am merely the steward of this
-code base. If you create PRs with improvements or bugfixes, please make sure
-to test them before submitting them.**
+**NOTICE: This is a fork of the original project by jacob-bunk (via ileodo). This version does not contain the full functionality of the upstream repository, but is optimized to download large libraries of tagged photos without hitting API limits or 504 connection timeouts. If you have general questions or need the original feature set, I highly encourage you to consult the upstream codebase. If you would like to submit Pull Requests (PRs) with improvements or bugfixes to this fork, please make sure to test them locally before submitting.**
 
 ## Local Development
 
@@ -39,12 +37,13 @@ To deactivate the virtual environment when done:
 deactivate
 ```
 
-## Get Started
+## Using the program
 
+Inside the virtual environment, use the command
 ```
-pip install famly-fetch
 famly-fetch
 ```
+to run the program. 
 
 Enter your email and password when prompted, or provide an access token for authentication. Run `famly-fetch --help` to
 get full help page.
